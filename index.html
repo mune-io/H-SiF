@@ -2,314 +2,123 @@
 <html lang="pl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Waloryzacja produktu ubocznego H₂SiF₆</title>
 <style>
-  :root{
-    --bg: #f6f3ec;
-    --ink: #1f2a24;
-    --ink-soft: #4a5750;
-    --accent: #3a6b52;
-    --accent-2: #b3502b;
-    --line: #d8d2c2;
-    --card: #ffffff;
-  }
-  *{box-sizing:border-box;}
-  body{
-    margin:0;
-    background:var(--bg);
-    color:var(--ink);
-    font-family: "Iowan Old Style","Palatino Linotype", Georgia, serif;
-    line-height:1.65;
-  }
-  .wrap{
-    max-width:820px;
-    margin:0 auto;
-    padding:64px 28px 100px;
-  }
-  header.hero{
-    border-bottom:3px solid var(--accent);
-    padding-bottom:28px;
-    margin-bottom:44px;
-  }
-  .eyebrow{
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    letter-spacing:.18em;
-    text-transform:uppercase;
-    font-size:12px;
-    color:var(--accent-2);
-    font-weight:700;
-    margin-bottom:14px;
-  }
-  h1{
-    font-size:2.5rem;
-    line-height:1.15;
-    margin:0 0 12px;
-    font-weight:700;
-    color:var(--ink);
-  }
-  .subtitle{
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    font-size:1.05rem;
-    color:var(--ink-soft);
-    max-width:60ch;
-  }
-  .benefits{
-    margin-top:26px;
-    display:flex;
-    gap:18px;
-    flex-wrap:wrap;
-  }
-  .benefit-pill{
-    font-family:"Helvetica Neue", Arial, sans-serif;
-    font-size:.85rem;
-    background:var(--card);
-    border:1px solid var(--line);
-    border-left:4px solid var(--accent);
-    padding:10px 16px;
-    border-radius:4px;
-    color:var(--ink-soft);
-  }
-  .benefit-pill b{color:var(--accent);}
-
-  section{
-    margin-bottom:46px;
-  }
-  h2{
-    font-family:"Helvetica Neue", Arial, sans-serif;
-    font-size:1.05rem;
-    letter-spacing:.06em;
-    text-transform:uppercase;
-    color:var(--accent);
-    border-bottom:1px solid var(--line);
-    padding-bottom:10px;
-    margin-bottom:20px;
-    display:flex;
-    align-items:baseline;
-    gap:10px;
-  }
-  h2 .num{
-    font-family:"Iowan Old Style", Georgia, serif;
-    font-size:1.5rem;
-    color:var(--accent-2);
-    font-weight:700;
-    text-transform:none;
-    letter-spacing:0;
-  }
-  p{margin:0 0 14px;}
-  .reaction{
-    font-family:"Courier New", monospace;
-    background:var(--card);
-    border:1px solid var(--line);
-    padding:14px 18px;
-    border-radius:4px;
-    margin:16px 0;
-    font-size:.95rem;
-    color:var(--ink);
-  }
-  ol, ul{
-    padding-left:22px;
-    margin:0 0 14px;
-  }
-  li{margin-bottom:8px;}
-  .callout{
-    background:var(--card);
-    border:1px solid var(--line);
-    border-left:4px solid var(--accent-2);
-    padding:16px 20px;
-    border-radius:4px;
-    font-size:.98rem;
-    color:var(--ink-soft);
-  }
-  table{
-    width:100%;
-    border-collapse:collapse;
-    background:var(--card);
-    border:1px solid var(--line);
-    font-family:"Helvetica Neue", Arial, sans-serif;
-    font-size:.92rem;
-  }
-  th, td{
-    padding:12px 16px;
-    text-align:left;
-    border-bottom:1px solid var(--line);
-  }
-  th{
-    background:#eef0e9;
-    color:var(--accent);
-    font-weight:700;
-    text-transform:uppercase;
-    font-size:.75rem;
-    letter-spacing:.05em;
-  }
-  tr:last-child td{border-bottom:none;}
-  td:last-child{font-weight:600;}
-  .partners{
-    display:grid;
-    gap:14px;
-  }
-  .partner{
-    background:var(--card);
-    border:1px solid var(--line);
-    border-radius:4px;
-    padding:14px 18px;
-  }
-  .partner b{color:var(--accent);}
-  .markets{
-    display:grid;
-    gap:12px;
-  }
-  .market{
-    display:flex;
-    gap:14px;
-    align-items:baseline;
-  }
-  .market .flagname{
-    font-family:"Helvetica Neue", Arial, sans-serif;
-    font-weight:700;
-    min-width:110px;
-    color:var(--accent-2);
-  }
-  footer{
-    margin-top:60px;
-    padding-top:24px;
-    border-top:1px solid var(--line);
-    font-family:"Helvetica Neue", Arial, sans-serif;
-    font-size:.8rem;
-    color:var(--ink-soft);
-  }
-  footer ol{padding-left:18px;}
-  .note{
-    margin-top:20px;
-    font-style:italic;
-    font-size:.85rem;
-    color:var(--ink-soft);
-  }
+  body { font-family: Georgia, 'Times New Roman', serif; max-width: 780px; margin: 40px auto; padding: 0 20px; line-height: 1.55; color: #1a1a1a; }
+  h1 { font-size: 1.8em; margin-bottom: 0.1em; }
+  h3.subtitle { font-weight: normal; font-size: 1.1em; color: #444; margin-top: 0; }
+  h2 { font-size: 1.3em; margin-top: 1.8em; color: #14496b; border-bottom: 1px solid #ddd; padding-bottom: 0.2em; }
+  ul { margin: 0.5em 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  th, td { border: 1px solid #ccc; padding: 6px 10px; text-align: left; }
+  th { background: #e6f1fb; }
+  .note { font-style: italic; margin-top: 1.5em; }
+  .formula { text-align: center; margin: 0.8em 0; }
+  a { color: #14496b; }
 </style>
 </head>
 <body>
-<div class="wrap">
 
-  <header class="hero">
-    <div class="eyebrow">Pomysł biznesowy — chemia przemysłowa</div>
-    <h1>Waloryzacja produktu ubocznego H₂SiF₆</h1>
-    <p class="subtitle">Zamiana odpadu z oczyszczania gazów w towarowy produkt chemiczny.</p>
-    <div class="benefits">
-      <div class="benefit-pill"><b>~600 000 EUR/rok</b> — potencjalny przychód</div>
-      <div class="benefit-pill"><b>Ekologia</b> — zmniejszenie lub zniknięcie zapachu HF</div>
-    </div>
-  </header>
+<h1>Waloryzacja produktu ubocznego H₂SiF₆</h1>
+<h3 class="subtitle">Pomysł biznesowy: zamiana odpadu z oczyszczania gazów w towarowy produkt chemiczny</h3>
 
-  <section>
-    <h2><span class="num">1</span>Istota pomysłu</h2>
-    <p>W procesie produkcji superfosfatu powstaje produkt uboczny — roztwór kwasu fluorokrzemowego (H₂SiF₆, stężenie 10–20%), wychwytywany przez trójstopniowy układ skruberów w węźle absorpcji gazów fluorowych. Obecnie roztwór ten jest w całości ponownie wykorzystywany wewnątrz zakładu jako ciecz zraszająca w granulatorze bębnowym — czyli faktycznie jest utylizowany bezpłatnie, bez wydobycia z niego wartości handlowej.</p>
-    <div class="callout">
-      Propozycja: skierować część tego roztworu nie do nawilżania granulatu, lecz na osobną linię oczyszczania i zatężania do jakości towarowej (20–25% H₂SiF₆), a następnie sprzedawać go jako samodzielny produkt chemiczny odbiorcom z branży fluorochemicznej, obróbki metali lub uzdatniania wody.
-    </div>
-  </section>
+<h2>Wprowadzenie</h2>
+<p>Pomysł polega na tym, aby kupować od Fabryka Zieleni H2SiF6 — zorganizować odrębną produkcję lub produkcję wspólną z Fabryka Zieleni.</p>
+<p>Korzyści:</p>
+<ul>
+  <li>przychód około 600 000 EURO w skali roku</li>
+  <li>poprawa sytuacji ekologicznej, zmniejszenie lub pełne zniknięcie zapachu HF</li>
+</ul>
 
-  <section>
-    <h2><span class="num">2</span>Skąd bierze się H₂SiF₆</h2>
-    <p>Główna reakcja rozkładu fosforytu kwasem siarkowym uwalnia fluorowodór (HF), który reaguje z krzemionką (SiO₂), naturalną domieszką fosforytu:</p>
-    <div class="reaction">Ca₅(PO₄)₃F + 5 H₂SO₄ + 10 H₂O → 3 H₃PO₄ + 5 CaSO₄·2H₂O + HF</div>
-    <div class="reaction">4 HF + SiO₂ → SiF₄↑ + 2 H₂O</div>
-    <p>Powstały SiF₄ oraz pozostały HF są wychwytywane w węźle absorpcji roztworem wodnym, gdzie zachodzi ich reakcja z utworzeniem kwasu fluorokrzemowego:</p>
-    <div class="reaction">SiF₄ + 2 HF → H₂SiF₆ (w roztworze wodnym)</div>
-    <p>Obecnie ten roztwór (10–20% H₂SiF₆) jest podawany do granulatora bębnowego jako ciecz do obtaczania cząstek superfosfatu — dokumentacyjnie opisane jako zastępstwo zwykłej wody technologicznej (decyzja WOŚ.II.7222.2.5.2015.BF z 16.03.2015 r., pkt II.1.5.1).</p>
-  </section>
+<h2>1. Istota pomysłu</h2>
+<p>W procesie produkcji superfosfatu powstaje produkt uboczny — roztwór kwasu fluorokrzemowego (H₂SiF₆, stężenie 10–20%), wychwytywany przez trójstopniowy układ skruberów w węźle absorpcji gazów fluorowych. Obecnie roztwór ten jest w całości ponownie wykorzystywany wewnątrz zakładu jako ciecz zraszająca w granulatorze bębnowym — czyli faktycznie jest utylizowany bezpłatnie, bez wydobycia z niego wartości handlowej.</p>
+<p>Propozycja: skierować część tego roztworu nie do nawilżania granulatu, lecz na osobną linię oczyszczania i zatężania do jakości towarowej (20–25% H₂SiF₆), a następnie sprzedawać go jako samodzielny produkt chemiczny odbiorcom z branży fluorochemicznej, obróbki metali lub uzdatniania wody.</p>
 
-  <section>
-    <h2><span class="num">3</span>Problem: ulatnianie się fluoru podczas suszenia</h2>
-    <p>H₂SiF₆ jest związkiem nietrwałym termicznie. Podczas ogrzewania i usuwania wody równowaga reakcji przesuwa się w stronę produktów lotnych (zasada Le Chateliera):</p>
-    <div class="reaction">H₂SiF₆ → 2 HF↑ + SiF₄↑</div>
-    <p>Kluczowe jest rozróżnienie dwóch przypadków trwałości termicznej. Stałe krystaliczne heksafluorokrzemiany (sole Na₂SiF₆, Li₂SiF₆, CaSiF₆) są trwałe i rozkładają się dopiero w 300–400°C. Jednak w FOSFAN mamy do czynienia z <b>wodnym roztworem</b> H₂SiF₆ — dla niego próg jest znacznie niższy. Badania naukowe pokazują, że taki roztwór częściowo rozkłada się na SiF₄ i HF już w temperaturze <b>70–95°C</b>, z mierzalnym ulatnianiem się tych gazów do powietrza [1].</p>
-    <p>Odpowiada to bezpośrednio zakresowi roboczemu suszarki granulacyjnej. Zgodnie z decyzją WOŚ.II.7222.2.5.2015.BF, wilgotny granulat (15–17% H₂O) jest suszony gorącymi gazami do wilgotności 3–5% H₂O; temperatura granulatu na wyjściu z suszarni wynosi 50–60°C. Typowy zakres temperatury gazu wejściowego dla analogicznych suszarni wynosi 150–300°C, a temperatura materiału na wyjściu w badaniach przemysłowych superfosfatu waha się w granicach 65–90°C.</p>
-    <div class="callout">
-      Wniosek praktyczny: część cennego surowca (fluoru) jest obecnie tracona do atmosfery na etapie suszenia granulatu, zamiast zostać odzyskana jako produkt towarowy, zanim roztwór trafi do granulatora.
-    </div>
-    <p style="margin-top:14px;">Mechanizm jest częściowo uwzględniony w systemie oczyszczania: gazy odlotowe z suszarni przechodzą przez skrubery fluidalne linii granulacji, normowane jako emitory E-5/E-6 (decyzja WOŚ.II.7222.17.2.2016.GD, tabela nr 7). Spółka oficjalnie przyznaje utrzymującą się uciążliwość zapachową w rejonie Stołczyna, dla której planowano dodatkowy (czwarty) stopień absorpcji z reagentem dezodoryzującym.</p>
-  </section>
+<h2>2. Skąd bierze się H₂SiF₆ i dlaczego obecnie jest rozpylany na granulki</h2>
+<p>Główna reakcja rozkładu fosforytu kwasem siarkowym (Ca₅(PO₄)₃F + 5 H₂SO₄ + 10 H₂O → 3 H₃PO₄ + 5 CaSO₄·2H₂O + HF) uwalnia fluorowodór (HF), który reaguje z krzemionką (SiO₂), naturalną domieszką fosforytu:</p>
+<p class="formula">4 HF + SiO₂ → SiF₄↑ + 2 H₂O</p>
+<p>Powstały SiF₄ oraz pozostały HF są wychwytywane w węźle absorpcji roztworem wodnym, gdzie zachodzi ich reakcja z utworzeniem kwasu fluorokrzemowego:</p>
+<p class="formula">SiF₄ + 2 HF → H₂SiF₆ (w roztworze wodnym)</p>
+<p>Obecnie ten roztwór (10–20% H₂SiF₆) jest podawany do granulatora bębnowego jako ciecz do obtaczania cząstek superfosfatu — dokumentacyjnie opisane jest to jako zastępstwo zwykłej wody technologicznej («w granulatorze materiał zraszany jest wodą lub roztworem poabsorpcyjnym», decyzja WOŚ.II.7222.2.5.2015.BF z 16.03.2015 r., pkt II.1.5.1).</p>
 
-  <section>
-    <h2><span class="num">4</span>Proponowane rozwiązanie</h2>
-    <p>Zamiast podawania całej objętości roztworu H₂SiF₆ do granulatora:</p>
-    <ol>
-      <li>Odprowadzać roztwór z obiegu cyrkulacyjnego 1. stopnia absorpcji (zbiornik 1, 10–20% H₂SiF₆) na osobną linię oczyszczania.</li>
-      <li>Strącać towarzyszące zanieczyszczenia (siarczany, fosforany, zawiesinę gipsu) reagentem wapniowym z kontrolą pH i filtracją.</li>
-      <li>Zatężać roztwór do towarowych 20–25% metodą odparowania próżniowego (aby zminimalizować straty lotnego fluoru podczas ogrzewania).</li>
-      <li>Sprzedawać gotowy produkt na rynku fluorochemicznym (uzdatnianie wody, obróbka metali, produkcja fluorku glinu/kriolitu), zamiast kierować go do granulatora.</li>
-    </ol>
-  </section>
+<h2>3. Problem: ulatnianie się fluoru podczas suszenia granulatu</h2>
+<p>H₂SiF₆ jest związkiem nietrwałym termicznie. Podczas ogrzewania i usuwania wody równowaga reakcji jego powstawania przesuwa się w stronę odwrotną (zasada Le Chateliera: usuwanie wody z układu przesuwa równowagę w stronę produktów lotnych):</p>
+<p class="formula">H₂SiF₆ → 2 HF↑ + SiF₄↑</p>
+<p>Istotne jest rozróżnienie dwóch zasadniczo różnych przypadków trwałości termicznej tego związku.</p>
+<p><strong>Stałe krystaliczne heksafluorokrzemiany</strong> (sole Na₂SiF₆, Li₂SiF₆, CaSiF₆) są rzeczywiście trwałe i rozkładają się dopiero w wysokich temperaturach — 300–400°C (np. Li₂SiF₆ ulega całkowitemu rozkładowi w 350°C w ciągu 30 minut; CaSiF₆ — w zakresie 300–400°C).</p>
+<p><strong>Jednak w FOSFAN mamy do czynienia nie z solą stałą, lecz z wodnym roztworem H₂SiF₆</strong> — a dla niego próg jest znacznie niższy. Bezpośrednie badanie naukowe dotyczące właśnie wodnego roztworu kwasu fluorokrzemowego (w kontekście mokrego procesu produkcji kwasu fosforowego) wykazało, że roztwór <strong>częściowo rozkłada się na SiF₄ i HF już w temperaturze 70–95°C</strong>, z mierzalnym ulatnianiem się tych gazów do powietrza — właśnie w tym zakresie temperatur prowadzono pomiary współczynników podziału fluorków między kwasem a atmosferą [1].</p>
+<p>Odpowiada to bezpośrednio zakresowi roboczemu suszarki granulacyjnej. Zgodnie z decyzją WOŚ.II.7222.2.5.2015.BF (pkt II.1.5.2), wilgotny granulat (15–17% H₂O) jest poddawany suszeniu gorącymi gazami ze spalania gazu ziemnego GZ-50 lub gazu wielkopiecowego, do wilgotności 3–5% H₂O; temperatura granulatu na wyjściu z suszarni wynosi 50–60°C. Temperatura samego gazu grzewczego na wejściu nie jest podana w dokumencie, jednak według ogólnobranżowych danych dla analogicznych suszarni bębnowych obrotowych stosowanych do granulowanych nawozów typowy zakres temperatury gazu wejściowego wynosi 150–300°C (przykładowo: suszarnia nawozów NPK z temperaturą gazu wejściowego 300°C), a temperatura samego materiału na wyjściu w różnych badaniach przemysłowych superfosfatu waha się w granicach 65–90°C (m.in. testy przemysłowe w zakładzie FARG'ONAAZOT wykazały granulat na wejściu do suszarni w temperaturze 100°C, na wyjściu — 70°C).</p>
+<p>Tym samym nawet konserwatywna dolna granica temperatury materiału wewnątrz bębna suszarni FOSFAN (50–60°C na wyjściu, prawdopodobnie wyższa na początku bębna, gdzie kontakt z gorętszym gazem jest największy) znajduje się blisko lub już wewnątrz zakresu 70–95°C, w którym — zgodnie z danymi naukowymi — wodny roztwór H₂SiF₆ zaczyna się mierzalnie rozkładać i ulatniać. Innymi słowy, próg rozkładu dla kwasu w postaci ciekłej na powierzchni granulek jest osiągany znacznie wcześniej i łatwiej, niż mogłoby się wydawać w oparciu o trwałość stałych krystalicznych fluorokrzemianów (300–400°C) — praktyczne ulatnianie się fluoru podczas suszenia granulatu jest fizycznie prawdopodobne już przy standardowych warunkach roboczych tego węzła, a nie tylko w jakimś skrajnym/awaryjnym trybie pracy.</p>
+<p>Mechanizm ten jest już częściowo uwzględniony w systemie oczyszczania: gazy odlotowe z suszarni («strumień gorący») przechodzą przez osobne skrubery linii granulacji (skrubery fluidalne ze złożem ruchomym), normowane jako emitory E-5/E-6 pod względem fluoru, chlorowodoru i pyłu (decyzja WOŚ.II.7222.17.2.2016.GD z 23.11.2016 r., tabela nr 7). Niemniej sama spółka oficjalnie przyznaje utrzymującą się uciążliwość zapachową w rejonie Stołczyna, dla której planowano dodatkowy (czwarty) stopień absorpcji z dedykowanym reagentem dezodoryzującym.</p>
+<p>Wniosek praktyczny: część cennego surowca (fluoru) jest obecnie tracona do atmosfery właśnie na etapie suszenia granulatu, zamiast zostać odzyskana jako produkt towarowy, zanim roztwór trafi do granulatora.</p>
 
-  <section>
-    <h2><span class="num">5</span>Ekonomika projektu (szacunki)</h2>
-    <p>Wszystkie liczby to inżynierskie szacunki oparte na bilansie masowym wynikającym z obowiązującego pozwolenia (nie są to zmierzone dane rzeczywiste zakładu), podane w celu określenia rzędu wielkości.</p>
-    <table>
-      <thead><tr><th>Parametr</th><th>Szacunek</th></tr></thead>
-      <tbody>
-        <tr><td>Obecna zdolność produkcyjna superfosfatu</td><td>160 000 t/rok</td></tr>
-        <tr><td>Szacunek ilości czystego H₂SiF₆</td><td>~350 t/rok</td></tr>
-        <tr><td>Ilość roztworu towarowego (20–25%)</td><td>~1 500–1 750 t/rok</td></tr>
-        <tr><td>Szacunkowa cena produktu</td><td>~400 USD/t</td></tr>
-        <tr><td>Potencjalny roczny przychód</td><td>~600 000–700 000 USD/rok</td></tr>
-        <tr><td>Koszt urządzeń (dostawcy chińscy)</td><td>~500 000–600 000 USD</td></tr>
-        <tr><td>Szacunek pełnego projektu pod klucz</td><td>~0,9–1,5 mln USD</td></tr>
-        <tr><td>Okres zwrotu (tylko urządzenia)</td><td>~1 rok</td></tr>
-        <tr><td>Okres zwrotu (projekt pod klucz)</td><td>~1,5–3 lata</td></tr>
-      </tbody>
-    </table>
-    <p style="margin-top:16px;">Dla porównania: pozostawienie obecnego schematu (cały roztwór trafia do granulatora) daje realną korzyść jedynie w postaci oszczędności na wodzie technologicznej wypieranej przez roztwór (rzędu kilku tysięcy USD/rok) — czyli o ponad rząd wielkości mniej niż potencjalny przychód ze sprzedaży oczyszczonego produktu.</p>
-  </section>
+<h2>4. Proponowane rozwiązanie</h2>
+<p>Zamiast podawania całej objętości roztworu H₂SiF₆ do granulatora:</p>
+<ul>
+  <li>1. Odprowadzać roztwór z obiegu cyrkulacyjnego 1. stopnia absorpcji (zbiornik 1, 10–20% H₂SiF₆) na osobną linię oczyszczania.</li>
+  <li>2. Strącać towarzyszące zanieczyszczenia (siarczany, fosforany, zawiesinę gipsu) reagentem wapniowym z kontrolą pH i filtracją.</li>
+  <li>3. Zatężać roztwór do towarowych 20–25% metodą odparowania próżniowego (aby zminimalizować straty lotnego fluoru podczas ogrzewania).</li>
+  <li>4. Sprzedawać gotowy produkt na rynku fluorochemicznym (uzdatnianie wody, obróbka metali, produkcja fluorku glinu/kriolitu), zamiast kierować go do granulatora.</li>
+</ul>
 
-  <section>
-    <h2><span class="num">6</span>Dodatkowy efekt — środowiskowy</h2>
-    <p>Odprowadzenie części roztworu do oczyszczania przed podaniem go do granulatora zmniejsza ilość H₂SiF₆ przechodzącego przez etap suszenia, a tym samym potencjalnie zmniejsza związany z tym termiczny rozkład/ulatnianie się fluoru i związków zapachowych na tym etapie — projekt może więc jednocześnie przyczynić się do ograniczenia uciążliwości zapachowej, którą spółka już oficjalnie przyznaje i planuje adresować odrębnymi inwestycjami (modernizacja węzła dezodoryzacji).</p>
-  </section>
+<h2>5. Ekonomika projektu (szacunki)</h2>
+<p>Wszystkie liczby poniżej to inżynierskie szacunki oparte na bilansie masowym wynikającym z obowiązującego pozwolenia (nie są to zmierzone dane rzeczywiste zakładu), podane w celu określenia rzędu wielkości.</p>
+<table>
+  <tr><th>Parametr</th><th>Szacunek</th></tr>
+  <tr><td>Obecna zdolność produkcyjna superfosfatu</td><td>160 000 t/rok</td></tr>
+  <tr><td>Szacunek ilości czystego H₂SiF₆</td><td>~350 t/rok</td></tr>
+  <tr><td>Ilość roztworu towarowego (20–25%)</td><td>~1 500–1 750 t/rok</td></tr>
+  <tr><td>Szacunkowa cena produktu</td><td>~400 USD/t</td></tr>
+  <tr><td>Potencjalny roczny przychód</td><td>~600 000–700 000 USD/rok</td></tr>
+  <tr><td>Koszt urządzeń (dostawcy chińscy)</td><td>~500 000–600 000 USD</td></tr>
+  <tr><td>Szacunek pełnego projektu pod klucz (z montażem i inżynierią)</td><td>~0,9–1,5 mln USD</td></tr>
+  <tr><td>Okres zwrotu (tylko urządzenia)</td><td>~1 rok</td></tr>
+  <tr><td>Okres zwrotu (projekt pod klucz)</td><td>~1,5–3 lata</td></tr>
+</table>
+<p>Dla porównania: pozostawienie obecnego schematu (cały roztwór trafia do granulatora) daje realną korzyść jedynie w postaci oszczędności na wodzie technologicznej wypieranej przez roztwór (rzędu kilku tysięcy USD/rok) — czyli o ponad rząd wielkości mniej niż potencjalny przychód ze sprzedaży oczyszczonego produktu.</p>
 
-  <section>
-    <h2><span class="num">7</span>Współpraca z chińskimi producentami</h2>
-    <p>Prowadzimy rozmowy z chińskimi producentami urządzeń, gotowymi pomóc zarówno z dostawą urządzeń, jak i wsparciem inżynieryjnym. Możliwe jest rozpoczęcie współpracy od wspólnych badań laboratoryjnych na próbkach rzeczywistego roztworu z zakładu, zanim podjęta zostanie decyzja o inwestycji w pełną instalację przemysłową.</p>
-    <div class="partners">
-      <div class="partner"><b>Chengdu Sange Chemical (成都三格化工)</b> — chińska firma specjalizująca się w zatężaniu, oczyszczaniu i odarsenizacji kwasu fluorokrzemowego, dysponująca własnymi technologiami (IP) w tym zakresie.</div>
-      <div class="partner"><b>Prayon (Belgia)</b> — europejski lider technologii odzysku fluoru z gazów odlotowych produkcji kwasu fosforowego, licencjonujący instalacje do produkcji towarowego H₂SiF₆.</div>
-      <div class="partner"><b>KEMWorks (USA)</b> — firma inżynieryjno-konsultingowa specjalizująca się w technologiach kwasu fosforowego, w tym w odzysku FSA metodą wyparną.</div>
-      <div class="partner"><b>Pozostali więksi gracze</b> chińskiej branży fluorochemicznej (m.in. z otoczenia grup Dongyue Group, Duofuduo) — jako potencjalni dodatkowi dostawcy urządzeń lub partnerzy typu offtake, wymagający dalszej weryfikacji.</div>
-    </div>
-  </section>
+<h2>6. Dodatkowy efekt — środowiskowy</h2>
+<p>Odprowadzenie części roztworu do oczyszczania przed podaniem go do granulatora zmniejsza ilość H₂SiF₆ przechodzącego przez etap suszenia, a tym samym potencjalnie zmniejsza związany z tym termiczny rozkład/ulatnianie się fluoru i związków zapachowych na tym etapie — czyli projekt może jednocześnie przyczynić się do ograniczenia właśnie tej uciążliwości zapachowej, którą spółka już oficjalnie przyznaje i planuje adresować odrębnymi inwestycjami (modernizacja węzła dezodoryzacji).</p>
 
-  <section>
-    <h2><span class="num">8</span>Rynki zbytu dla H₂SiF₆</h2>
-    <p>Główne potencjalne rynki zbytu towarowego H₂SiF₆ poza Polską:</p>
-    <div class="markets">
-      <div class="market"><span class="flagname">Hiszpania</span><span>Największy odbiorca H₂SiF₆ w UE (ok. 16,5% rynku); kluczowy gracz: Derivados del Flúor (DDF), spółka specjalizująca się w przetwarzaniu FSA pochodzącego z zakładów fosforowych na inne produkty fluorowe.</span></div>
-      <div class="market"><span class="flagname">Niemcy</span><span>Największy rynek pod względem wolumenu (ok. 31–33% popytu europejskiego), głównie obróbka powierzchni metali oraz trawienie aluminium/cynku dla przemysłu motoryzacyjnego.</span></div>
-      <div class="market"><span class="flagname">Francja</span><span>Przemysł szklarski i włókienniczy (trawienie szkła/kryształu, wybielanie tkanin).</span></div>
-      <div class="market"><span class="flagname">Serbia</span><span>Elixir Prahovo.</span></div>
-    </div>
-  </section>
+<h2>7. Współpraca z chińskimi producentami</h2>
+<p>Prowadzimy rozmowy z chińskimi producentami urządzeń, którzy są gotowi pomóc zarówno z dostawą urządzeń, jak i wsparciem inżynieryjnym. Możliwe jest rozpoczęcie współpracy od wspólnych badań laboratoryjnych na próbkach rzeczywistego roztworu z zakładu, zanim podjęta zostanie decyzja o inwestycji w pełną instalację przemysłową.</p>
+<p>Firmy rozważane jako potencjalni partnerzy:</p>
+<ul>
+  <li>Chengdu Sange Chemical (成都三格化工) — chińska firma specjalizująca się w zatężaniu, oczyszczaniu i odarsenizacji kwasu fluorokrzemowego, dysponująca własnymi technologiami (IP) w tym zakresie</li>
+  <li>Prayon (Belgia) — europejski lider technologii odzysku fluoru z gazów odlotowych produkcji kwasu fosforowego, licencjonujący instalacje do produkcji towarowego H2SiF6</li>
+  <li>KEMWorks (USA) — firma inżynieryjno-konsultingowa specjalizująca się w technologiach kwasu fosforowego, w tym w odzysku FSA metodą wyparną</li>
+  <li>Pozostali więksi gracze chińskiej branży fluorochemicznej (m.in. z otoczenia grup Dongyue Group, Duofuduo) — jako potencjalni dodatkowi dostawcy urządzeń lub partnerzy typu offtake, wymagający dalszej weryfikacji</li>
+</ul>
 
-  <section>
-    <h2><span class="num">9</span>Potencjał replikacji technologii w Polsce</h2>
-    <p>W przypadku powodzenia projektu, opracowaną technologię oczyszczania i zatężania H₂SiF₆ wraz z urządzeniami można by zaoferować innym zakładom prowadzącym analogiczny proces mokrego rozkładu fosforytu kwasem siarkowym, gdzie powstaje ten sam produkt uboczny:</p>
-    <ul>
-      <li><b>Zakłady Chemiczne "Siarkopol" Tarnobrzeg</b> — historycznie największy producent nawozów fosforowych w Polsce.</li>
-      <li><b>CICh Năvodari</b> (Rumunia)</li>
-    </ul>
-  </section>
+<h2>8. Rynki zbytu dla H2SiF6</h2>
+<p>Główne potencjalne rynki zbytu towarowego H2SiF6 poza Polską:</p>
+<ul>
+  <li>Hiszpania - największy odbiorca H2SiF6 w UE (ok. 16,5% rynku); kluczowy gracz: Derivados del Flúor (DDF), spółka specjalizująca się właśnie w przetwarzaniu FSA pochodzącego z zakładów fosforowych na inne produkty fluorowe</li>
+  <li>Niemcy - największy rynek pod względem wolumenu (ok. 31–33% popytu europejskiego), głównie obróbka powierzchni metali oraz trawienie aluminium/cynku dla przemysłu motoryzacyjnego</li>
+  <li>Francja - przemysł szklarski i włókienniczy (trawienie szkła/kryształu, wybielanie tkanin)</li>
+  <li>Elixir Prahovo (Serbia) — </li>
+</ul>
 
-  <footer>
-    <h2 style="border:none;padding-bottom:0;">Źródła</h2>
-    <ol>
-      <li>Decyzja Marszałka Województwa Zachodniopomorskiego z 16.03.2015 r., znak WOŚ.II.7222.2.5.2015.BF (opis instalacji, węzeł absorpcji, granulacja, suszenie)</li>
-      <li>Decyzja z 23.11.2016 r., znak WOŚ.II.7222.17.2.2016.GD (emisje, tabela emitorów)</li>
-      <li>Decyzja z 12.10.2022 r., znak WOŚ-II.7222.32.2022.AWY (wzrost mocy produkcyjnych do 160 000 Mg/rok)</li>
-      <li>Publikacje własne FOSFAN S.A. / Fabryka Zieleni SA nt. modernizacji instalacji dezodoryzacji (LinkedIn)</li>
-      <li>[1] Properties of fluoride in wet phosphoric acid processes: Fluorosilicic acid in an aqueous solution of H₂SiF₆-H₂O at temperatures ranging from 298.15K to 353.15K</li>
-      <li>[2] Dahlke, T.; Ruffiner, O.; Cant, R. "Production of HF from H2SiF6", Procedia Engineering, 2016, 138, 231-239, DOI: 10.1016/j.proeng.2016.02.080</li>
-    </ol>
-    <p class="note">Uwaga: liczby dotyczące ekonomiki to inżynierskie szacunki oparte na bilansie masowym i cenach rynkowych, a nie zmierzone dane zakładu; przed podjęciem decyzji konieczne jest potwierdzenie u samej spółki (rzeczywista ilość, skład zanieczyszczeń) oraz uzyskanie ofert handlowych od dostawców urządzeń.</p>
-  </footer>
+<h2>9. Potencjał replikacji technologii w Polsce</h2>
+<p>W przypadku powodzenia projektu, opracowaną technologię oczyszczania i zatężania H2SiF6 wraz z urządzeniami można by zaoferować innym polskim zakładom prowadzącym analogiczny proces mokrego rozkładu fosforytu kwasem siarkowym, gdzie powstaje ten sam produkt uboczny:</p>
+<ul>
+  <li>Zakłady Chemiczne "Siarkopol" Tarnobrzeg — historycznie największy producent nawozów fosforowych w Polsce</li>
+  <li>CICh Năvodari (RUMUNIA)</li>
+</ul>
 
-</div>
+<h2>10. Źródła</h2>
+<p>
+— Decyzja Marszałka Województwa Zachodniopomorskiego z 16.03.2015 r., znak WOŚ.II.7222.2.5.2015.BF (opis instalacji, węzeł absorpcji, granulacja, suszenie)<br>
+— Decyzja z 23.11.2016 r., znak WOŚ.II.7222.17.2.2016.GD (emisje, tabela emitorów)<br>
+— Decyzja z 12.10.2022 r., znak WOŚ-II.7222.32.2022.AWY (wzrost mocy produkcyjnych do 160 000 Mg/rok)<br>
+— Publikacje własne FOSFAN S.A. / Fabryka Zieleni SA nt. modernizacji instalacji dezodoryzacji (LinkedIn)
+</p>
+<p>
+[1] Properties of fluoride in wet phosphoric acid processes: Fluorosilicic acid in an aqueous solution of H2SiF6-H2O at temperatures ranging from 298.15K to 353.15K<br>
+[2] Dahlke, T.; Ruffiner, O.; Cant, R. "Production of HF from H2SiF6", Procedia Engineering, 2016, 138, 231-239, DOI: 10.1016/j.proeng.2016.02.080; cytowane w: <a href="https://pubs.acs.org/doi/10.1021/acssuschemeng.0c03218">pubs.acs.org/doi/10.1021/acssuschemeng.0c03218</a>
+</p>
+
+<p class="note">Uwaga: liczby dotyczące ekonomiki to inżynierskie szacunki oparte na bilansie masowym i cenach rynkowych, a nie zmierzone dane zakładu; przed podjęciem decyzji konieczne jest potwierdzenie u samej spółki (rzeczywista ilość, skład zanieczyszczeń) oraz uzyskanie ofert handlowych od dostawców urządzeń.</p>
+
 </body>
 </html>
